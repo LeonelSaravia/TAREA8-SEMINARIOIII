@@ -88,19 +88,19 @@ Para habilitar las actualizaciones en tiempo real, debe iniciarse el servidor We
 
 bash
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   php websocket_server.php   `
+`   php websocket_server.php   `
 
 El servidor se ejecutará en el puerto 8080 y mostrará:
 
 text
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   === Servidor WebSocket de Averías ===  Servidor iniciado en puerto 8080  URL: ws://localhost:8080  Presiona Ctrl+C para detener el servidor   `
+`   === Servidor WebSocket de Averías ===  Servidor iniciado en puerto 8080  URL: ws://localhost:8080  Presiona Ctrl+C para detener el servidor   `
 
 ### Iniciar Servidor CodeIgniter
 
 bash
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   php spark serve   `
+`   php spark serve   `
 
 ### Acceder al Sistema
 
@@ -138,9 +138,27 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 Estructura del Proyecto
 -----------------------
 
-text
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   app/  ├── Controllers/  │   └── Averias.php          # Controlador principal  ├── Models/  │   └── AveriasModel.php     # Modelo de datos  ├── Views/  │   └── averias/  │       ├── listar.php       # Vista de listado  │       ├── atendidos.php    # Vista de atendidos  │       └── registrar.php    # Vista de registro  ├── WebSocket/  │   └── AveriasWebSocket.php # Servidor WebSocket  ├── Libraries/  │   └── WebSocketClient.php  # Cliente WebSocket  └── Config/      └── Routes.php           # Configuración de rutas  websocket_server.php         # Servidor WebSocket independiente   `
+  tu-proyecto/
+├── app/
+│   ├── Controllers/
+│   │   └── Averias.php
+│   ├── Models/
+│   │   └── AveriasModel.php
+│   ├── Libraries/
+│   │   └── WebSocketClient.php
+│   ├── WebSocket/
+│   │   └── AveriasWebSocket.php
+│   ├── Views/
+│   │   └── averias/
+│   │       ├── listar.php
+│   │       ├── atendidos.php
+│   │       └── registrar.php
+│   └── Config/
+│       └── Routes.php
+├── websocket_server.php
+└── (otros archivos de CodeIgniter) 
+
 
 Arquitectura WebSocket
 ----------------------
